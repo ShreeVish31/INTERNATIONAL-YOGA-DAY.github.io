@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      background:linear-gradient(#2C3E50,#BDC3C7);
+    }
+    
+    form{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+.card {
+  width: 700px;
+  height: 100rem;
+  background: #F4F6FB;
+  border: 4px solid black;
+  box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+  -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+  -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+  margin-top:5rem;
+}
+
+.form {
+  padding: 25px;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+}
+
+.form_heading {
+  padding-bottom: 20px;
+  font-size: 5rem;
+  color: #7878bd;
+}
+
+.field {
+  padding-bottom: 10px;
+  font-size:3rem;
+}
+
+.input {
+  border-radius: 5px;
+  background-color: #e9e9f7;
+  padding: 5px;
+  width: 90%;
+  height:6rem;
+  color: black;
+  border: 4px solid blueviolet;
+  font-size:3rem;
+}
+
+textarea{
+  border-radius: 5px;
+  background-color: #e9e9f7;
+  padding: 5px;
+  width: 90%;
+  height:20rem;
+  color: black;
+  border: 4px solid blueviolet;
+  font-size:3rem;
+}
+
+textarea::placeholder{
+  color: #bcbcdf;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:3rem;
+}
+
+.input:focus-visible {
+  outline: 1px solid #bcbcdf;
+}
+
+.input::placeholder {
+  color: #bcbcdf;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:3rem;
+}
+
+label {
+  color: #006faf;
+  font-size: 3rem;
+  display: block;
+  padding-bottom: 4px;
+}
+
+button {
+  background-color: #7878bd;
+  margin-top: 10px;
+  font-size: 4rem;
+  padding: 7px 12px;
+  height: auto;
+  font-weight: 500;
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button:hover {
+  background-color: coral;
+}
+  
+  </style>
+  
+</head>
+
+<body>
+   
+   <center><form class="form card">
+  <div class="card_header">
+    <h1 class="form_heading">FILL THE REVIEW/QUERY</h1>
+  </div>
+  <div class="field">
+    <label for="firstname">First Name</label>
+    <input id="firstname" placeholder="First Name" type="text" name="firstname" class="input"required>
+  </div>
+  
+  <div class="field">
+    <label for="lastname">Last Name</label>
+    <input id="lastname" placeholder="Last name" type="text" name="lastname" class="input" required></div>
+    
+    <div class="field">
+    <label for="query">About review/query</label>
+    <textarea placeholder="About review/query" name="query" rows="5" cols="40" id="query" required></textarea>
+    </div>
+    
+  <div class="field">
+    <label for="phone no">Phone No.</label>
+    <input id="phone" placeholder="Phone No." type="number" name="phone no" class="input" required>
+  </div>
+  
+  <div>
+    <label for="email">Email</label>
+    <input id="email" placeholder="Email" type="email" name="email" class="input" required>
+  </div><br>
+  
+  <div class="field">
+    <button class="button">Submit</button>
+  </div>
+</form>
+</center>
+   
+   
+</body>
+
+</html>
